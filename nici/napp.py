@@ -3,7 +3,7 @@ import streamlit as st
 
 @st.cache_data
 def get_data():
-    df = pd.read_csv("./data/essen.csv")
+    df = pd.read_csv("https://raw.githubusercontent.com/bcwodo/streamlit/master/nici/data/essen.csv")
     mwe = df.mean()
     mwt = df.mean(axis=1)
     mwt.index = df.Name
